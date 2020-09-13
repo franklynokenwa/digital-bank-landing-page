@@ -204,9 +204,6 @@ footer{
         position: relative; 
         left:67rem;
     }
-    body{
-        background: yellow;
-    }
 }
 
 @media (max-width:375px){
