@@ -12,7 +12,6 @@ header{
     padding: 0 -6rem;    
 }
 header .container{
-   
     margin-right: 10rem;
     padding-left: 0;
 }
@@ -28,9 +27,12 @@ header .container{
 
 #digital-banking-button{
     border-radius: 50px;
-    background: linear-gradient(to right , rgb(48, 204, 128), rgb(45, 187, 197));
+    background: linear-gradient(to right , rgb(48, 204, 122), rgb(42, 186, 197));
     border: none;
     
+}
+#digital-banking-button:hover{
+    background: rgb(168, 240, 201);
 }
 .digital-banking-background-image{
     width: 70rem;
@@ -124,12 +126,8 @@ footer{
     padding: 5rem 5%;
     
 }
-.footer-logo{
-    margin-bottom: 4rem;
-    background-color: rgb(250, 250, 250);
-}
 .footer-icons img{
-    padding-right: 5px;
+    padding-right: 3px;
     position: relative;
     top:3.5rem;
 }
@@ -138,10 +136,170 @@ footer{
     margin-bottom: 2rem;
     position: relative;
     left: 7rem;
-    
+    background: linear-gradient(to right , rgb(48, 204, 122), rgb(42, 186, 197));
+    border: none;
+}
+.footer-invite p{
+    color:rgb(106, 108, 131);
 }
 
 .filter-green{
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(69deg) brightness(206%) contrast(106%);
 }
 
+.mobile-background{
+    position:relative;
+    top:-51rem;
+    display: none;    
+}
+.nav-details:hover{
+    border-bottom: 2px solid green;
+    
+}
+.close{
+    visibility: hidden;
+    position: relative;
+    right: -5.5rem;
+}
+.mobile-nav{
+    background-color: white;
+    position: absolute;
+    width: 19rem;
+    height: 15rem;
+    padding: 1rem;
+    top: -2rem;
+    left: 2rem;
+    visibility: hidden;
+    
+}
+
+.footer-nav a{
+    text-decoration: none;
+    color: white;
+}
+.footer-nav-items{
+    color:white;
+}
+.hamburger-nav-items{
+    color:black;
+}
+.footer-nav-items:hover{
+    color:green;
+}
+#footer-button:hover{
+    background: rgb(168, 240, 201);
+}
+
+.fil:hover{
+    filter: invert(22%) sepia(96%) saturate(5090%) hue-rotate(112deg) brightness(96%) contrast(105%);
+}
+.attribution{
+    margin-top:2rem;
+    font-size: 14px;
+    text-align: center;
+}
+@media(min-width:737px){
+    #hamburger{      
+        display: none;
+        position: relative; 
+        left:67rem;
+    }
+    body{
+        background: yellow;
+    }
+}
+
+@media (max-width:375px){
+    body{
+        overflow-x: hidden;       
+    }
+
+    #hamburger{    
+        position: relative;   
+        visibility:visible;
+    }
+
+    header{        
+        background-color: white; 
+    }
+    #digital-banking{
+        background-color: rgb(250, 250, 250);
+        height: 45rem; 
+        margin: 0 5%;
+        position: relative;
+               
+    }
+    .digital-banking-background-image{
+        width: 50rem;
+        height: 30rem;
+        position: relative;
+        top: -65rem;
+        right: 8rem;
+        
+                
+    }
+    .digital-banking-phone-images{
+        width: 29rem;
+        height: 35rem;
+        position: relative;
+        top: -118.5rem;   
+        right: 4rem;
+        
+    }
+    .digital-banking-details{
+        margin-top: 28rem;
+        
+    }
+    .digital-banking-header, .digital-banking-text{
+        position: relative;
+        top: -5rem;
+        margin-bottom: 0;
+        
+    }
+    #digital-banking-button{
+        position: relative;
+        top: -3rem;
+        
+    }
+    .mobile-background{
+        position:relative;
+        top:-82rem;
+        display: none;
+    }
+    body{
+        text-align: center;
+    }
+    .footer-icons img{
+        padding-right: 9px;
+        position: static;
+        top:3.5rem;
+        margin: 1.5rem 0;
+    }
+    #footer-button{
+        border-radius: 50px;
+        margin: 2rem 0;
+        position: static;
+        
+        background: linear-gradient(to right , rgb(48, 204, 122), rgb(42, 186, 197));
+        border: none;
+    }
+    
+    #reasons{   
+        margin: 0 3%;
+    }
+    #articles{
+        margin: 0 3%;
+        background-color: white;
+        
+    }
+    #digital-banking{
+        margin: 5rem 0;
+    }
+    .reasons-why-text{
+        margin: 0 3%;
+    }
+    .articles{
+        margin:0  ;
+    }   
+
+}
